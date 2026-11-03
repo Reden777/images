@@ -10,3 +10,5 @@ For a 256x256 image, it's $0.016.
 For a 512x512 image, it's $0.018.
 
 As of 12 May 2026, DALLE-2 and DALLE-3 are no longer in public access.<br>The repository now includes `gpt-image-1` images, classified into folders per quality level. It is of note that only the `high` level seems to express the infamous yellow filter.
+
+`chatgpt` is the free chatgpt.com image generator. The current image on it was made on 3 November 2026, which probably means GPT Image 2.5 Flare.
