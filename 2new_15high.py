@@ -55,6 +55,7 @@ def main():
                     prompt=args.prompt,
                     n=1,
                     size="1024x1024",
+                    quality="high",
                 )
         else:
             print("Generating new image from scratch with GPT Image 1.5...")

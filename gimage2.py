@@ -50,11 +50,12 @@ def main():
                 open_files = [stack.enter_context(open(path, "rb")) for path in args.references]
 
                 response = client.images.edit(
-                    model="gpt-image-1.5",
+                    model="gpt-image-2.0",
                     image=open_files if len(open_files) > 1 else open_files[0],
                     prompt=args.prompt,
                     n=1,
                     size="1024x1024",
+                    quality="high",
                 )
         else:
             print("Generating new image from scratch with GPT Image 2.0...")
