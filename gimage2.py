@@ -43,7 +43,7 @@ def main():
     try:
         if args.references:
             print(f"Using {len(args.references)} reference image(s): {args.references}")
-            print("Generating with image references via GPT Image 1.5 edits...")
+            print("Generating with image references via GPT Image 2.0 edits...")
 
             with ExitStack() as stack:
                 # Open all files and ensure they close automatically when done
@@ -57,7 +57,7 @@ def main():
                     size="1024x1024",
                 )
         else:
-            print("Generating new image from scratch with GPT Image 1.5...")
+            print("Generating new image from scratch with GPT Image 2.0...")
             response = client.images.generate(
                 model="gpt-image-2",
                 prompt=args.prompt,
