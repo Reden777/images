@@ -63,7 +63,7 @@ def main():
                 model="gpt-image-2.5-sunburst",
                 prompt=args.prompt,
                 n=1,
-                size="2048x2048",
+                size="1920x1920",
                 quality="max",
             )
 
